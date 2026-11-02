@@ -1,6 +1,6 @@
 # O
 
-**O** is an autonomous coding agent built by **Arpecious).
+**O** is an autonomous coding agent built by **Arpecious**.
 
 Stack rule: **~65% Go, ~35% TypeScript/JavaScript**. The Go engine is the core
 (agent loop, tool execution, sandboxing, permissions, context, sessions, MCP,
