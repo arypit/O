@@ -1,0 +1,58 @@
+{
+  "name": "O",
+  "company": "Adaop",
+  "version": "0.0.10",
+  "domains": {
+    "website": "adaop.sbs",
+    "api": "api.adaop.sbs",
+    "websiteUrl": "https://adaop.sbs",
+    "apiUrl": "https://api.adaop.sbs"
+  },
+  "paths": {
+    "web": "web/",
+    "api": "api/",
+    "sessionsDir": "~/.o/sessions",
+    "memoryFile": "O.md"
+  },
+  "defaultProvider": "adaop",
+  "providers": {
+    "adaop": {
+      "baseUrl": "https://api.adaop.sbs/v1",
+      "model": "o-1",
+      "apiKeyEnv": "ADAOP_API_KEY"
+    }
+  },
+  "agents": {
+    "primary": {
+      "model": "o-1",
+      "mode": "default",
+      "maxTurns": 50
+    },
+    "planner": {
+      "description": "Read-only planning subagent",
+      "mode": "plan",
+      "maxTurns": 20
+    },
+    "reviewer": {
+      "description": "Reviews diffs and proposes fixes",
+      "mode": "default",
+      "maxTurns": 20
+    }
+  },
+  "permissions": {
+    "mode": "default",
+    "rules": {
+      "edit": "allow",
+      "write": "allow",
+      "bash": ["ask", "git *", "npm *", "node *"]
+    }
+  },
+  "context": {
+    "maxTokens": 180000,
+    "compactThreshold": 0.8,
+    "maxToolOutputChars": 20000
+  },
+  "mcpServers": {},
+  "hooks": {}
+}
+
