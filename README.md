@@ -1,6 +1,6 @@
 # O
 
-**O** is an autonomous coding agent built by **Arpecious**.
+**O** is an autonomous coding agent built by **Arypit**.
 
 The Go engine is the core
 (agent loop, tool execution, sandboxing, permissions, context, sessions, MCP,
