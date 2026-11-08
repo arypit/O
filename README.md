@@ -1,8 +1,8 @@
 # O
 
-**O** is an autonomous coding agent built by **Arypit**.
+**O** is an autonomous coding agent built by **Adaop** (adaop.sbs / api.adaop.sbs).
 
-The Go engine is the core
+Stack rule: **~65% Go, ~35% TypeScript/JavaScript**. The Go engine is the core
 (agent loop, tool execution, sandboxing, permissions, context, sessions, MCP,
 search algorithms, human-in-the-loop). The TS layer is the terminal UI client
 plus shell tooling.
